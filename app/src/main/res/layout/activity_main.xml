@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/headTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:fontFamily="@font/aladin"
+        android:text="@string/heading"
+        android:textColor="#E44B3F"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/imageGrid"
+        android:layout_width="0dp"
+        android:src="@drawable/grid"
+        app:layout_constraintTop_toBottomOf="@id/headTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/linearLay"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="@id/imageGrid"
+        app:layout_constraintEnd_toEndOf="@id/imageGrid"
+        app:layout_constraintStart_toStartOf="@id/imageGrid"
+        app:layout_constraintBottom_toBottomOf="@id/imageGrid"
+        android:layout_height="430dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/image1"
+                android:padding="25sp"
+                android:layout_width="match_parent"
+
+                android:tag="1"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/image2"
+                android:padding="25sp"
+                android:layout_width="match_parent"
+
+                android:tag="2"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/image3"
+                android:padding="25sp"
+                android:layout_width="match_parent"
+
+                android:tag="3"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_weight="1"
+                android:padding="25sp"
+                android:id="@+id/image4"
+                android:layout_width="match_parent"
+
+                android:tag="4"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:layout_weight="1"
+                android:padding="25sp"
+                android:id="@+id/image5"
+                android:layout_width="match_parent"
+
+                android:tag="5"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:layout_weight="1"
+                android:padding="25sp"
+                android:id="@+id/image6"
+                android:layout_width="match_parent"
+
+                android:tag="6"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_weight="1"
+                android:padding="25sp"
+                android:id="@+id/image7"
+                android:layout_width="match_parent"
+
+                android:tag="7"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:layout_weight="1"
+                android:padding="25sp"
+                android:id="@+id/image8"
+                android:layout_width="match_parent"
+
+                android:tag="8"
+                android:layout_height="match_parent"/>
+            <ImageView
+                android:layout_weight="1"
+                android:padding="25sp"
+                android:id="@+id/image9"
+                android:layout_width="match_parent"
+
+                android:tag="9"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLay"
+        android:layout_marginBottom="10dp"
+        android:text="O's Turn - Tap to play"
+
+        android:textStyle="bold"
+        android:textColor="#431E81"
+        android:textSize="30sp"
+        android:id="@+id/status"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
